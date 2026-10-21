@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #101412;
+  color: #f1f5f2;
+}
+
+/* Main container */
+
+.container {
+  width: 540px;
+  max-width: 92%;
+  margin: 55px auto;
+  padding: 38px;
+
+  background: #18201c;
+  border: 1px solid #29352e;
+  border-radius: 16px;
+
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Header */
+
+h1 {
+  margin: 0;
+
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.container > p {
+  margin: 8px 0 32px;
+
+  color: #9ca8a1;
+  font-size: 15px;
+}
+
+
+/* Form */
+
+form {
+  width: 100%;
+}
+
+
+/* Labels */
+
+label {
+  display: block;
+
+  margin-top: 22px;
+  margin-bottom: 8px;
+
+  color: #d7ded9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Inputs and dropdowns */
+
+input,
+select {
+  width: 100%;
+  height: 45px;
+
+  padding: 0 13px;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  color: #f1f5f2;
+  background: #111713;
+
+  border: 1px solid #344139;
+  border-radius: 8px;
+
+  outline: none;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: #5fa86b;
+  box-shadow: 0 0 0 3px rgba(95, 168, 107, 0.12);
+}
+
+input::placeholder {
+  color: #68736d;
+}
+
+
+/* Area and rainfall */
+
+.input-row {
+  display: flex;
+  gap: 12px;
+}
+
+.input-row input {
+  flex: 1;
+}
+
+.input-row select {
+  width: 140px;
+}
+
+
+/* Button */
+
+button {
+  width: 100%;
+  height: 46px;
+
+  margin-top: 30px;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  color: white;
+  background: #347a40;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #3f914d;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+
+/* Error / information message */
+
+.message {
+  margin: 20px 0 0;
+  padding: 12px 14px;
+
+  color: #c7d0ca;
+  background: #202923;
+
+  border: 1px solid #344139;
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+
+/* Unit conversion section */
+
+.conversion-card {
+  margin-top: 36px;
+  padding: 22px;
+
+  background: #141a16;
+
+  border: 1px solid #29352e;
+  border-radius: 11px;
+}
+
+.conversion-card h2 {
+  margin: 0 0 20px;
+
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* Individual formula */
+
+.formula {
+  padding: 14px 0;
+}
+
+.formula + .formula {
+  border-top: 1px solid #29352e;
+}
+
+.formula strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #d7ded9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formula p {
+  margin: 4px 0;
+
+  color: #929d96;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* Results */
+
+.results {
+  margin-top: 38px;
+  padding-top: 28px;
+
+  border-top: 1px solid #2c3730;
+}
+
+.results h2 {
+  margin: 0 0 18px;
+
+  font-size: 21px;
+  font-weight: 600;
+}
+
+
+/* Crop cards */
+
+.crop-card {
+  margin-top: 12px;
+  padding: 18px;
+
+  background: #202923;
+
+  border: 1px solid #303c34;
+  border-radius: 10px;
+
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.crop-card:hover {
+  border-color: #4d7255;
+  transform: translateY(-2px);
+}
+
+.crop-card h3 {
+  margin: 0 0 8px;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.crop-card p {
+  margin: 0;
+
+  color: #aeb8b1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Footer */
+
+footer {
+  margin-top: 34px;
+  padding-top: 18px;
+
+  text-align: center;
+
+  border-top: 1px solid #29352e;
+
+  color: #68736d;
+  font-size: 12px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .container {
+    margin: 25px auto;
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 29px;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .input-row select {
+    width: 100%;
+  }
+}
